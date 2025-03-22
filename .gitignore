@@ -5,6 +5,10 @@
 *.toc
 *.synctex.gz
 _build/
+*.fls
+*.fdb_latexmk
+*.blg
+*.bbl
 
 
 # Byte-compiled / optimized / DLL files
