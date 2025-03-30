@@ -193,7 +193,7 @@ The dataset we are planning to use is the “HOT3D” data set by Meta. This is 
       1) static desk views (upright \& upside-down) \newline
       2) in-hand views \\
       \hline
-    \end{tabular}
+  \end{tabular}
   }
   \caption{HOT3D Dataset statistics and description.}
   \label{tab:dataset}
@@ -211,6 +211,22 @@ results of RGBAvatar with the predefined Meta Hot3d dataset. On the other hand, 
 recreating the results of RGBAvatar from there.
 
 Finally, time permitting, we aim to create a real-time processor for hand avatars following the RGBAvatar model.
+
+\section{Early Experiments}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.7\columnwidth]{images/headImage.jpeg}
+  \caption{Initial Result of the RGBAvatar Code Reproduce}
+  \label{fig:Reproduce}
+\end{figure}
+
+During the initial reproduction of the RGBAvatar codebase, we observed that the quality of facial segmentation plays a critical role in the final rendering results.
+In particular, we noticed visible artifacts, such as rainbow-colored edges, around the avatar's face. We believe these reasons are inaccurate or imprecise segmentation.
+To achieve the significantly cleaner results produced by the INSTA pipeline segmentation method, we intend to adopt INSTA's segmentation approach in our implementation. 
+This will ensure more accurate and visually consistent reconstructions.
+
+
 % To produce a PDF file, pdf\LaTeX{} is strongly recommended (over original \LaTeX{} plus dvips+ps2pdf or dvipdf).
 % The style file \texttt{acl.sty} can also be used with
 % lua\LaTeX{} and
